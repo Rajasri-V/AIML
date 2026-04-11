@@ -1,0 +1,33 @@
+import React from "react";
+function Iterative(){
+    let obj={
+        name : "ram",
+        course: "degree",
+        name2:"sita",
+        course2:"btech"
+    }
+    let arr=["bhuvana","swathi","siva","deepa","Paru","shiva"]
+    let obj2=[
+        {id:1,name:"Raji"},
+        {id:2,name:"Bhuna"}
+    ]
+    return(
+        <>  
+
+        
+        {arr.map((i,index) => (
+            <h1 key={index}>{index+1}-{i}</h1>
+        ))}
+        {obj2.map((data) => (
+            <h1 key={data.id}>{data.id}-{data.name}</h1>
+        ))}
+        <h1>{arr}</h1>
+        {/* <h1>name is {obj.name}</h1> */}
+        <p>course is{obj.course}</p>
+        <pre>    meri naam {obj.name2}</pre>
+        <span>pursuing {obj.course2}</span>
+        
+        </>
+    )
+}
+export default Iterative

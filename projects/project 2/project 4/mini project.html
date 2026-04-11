@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VEMU Institute of Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            background-image: url("download (36).jfif");
+            background-size:cover;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+        header {
+            background-color: #1f618d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2874a6;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #1b4f72;
+            border-radius: 5px;
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1f618d;
+        }
+
+        /* Courses Tabs */
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .tabs label {
+            padding: 10px 20px;
+            margin-right: 5px;
+            background-color: #2874a6;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+        }
+        .tabs input[type="radio"] {
+            display: none;
+        }
+        .tab-content {
+            border: 1px solid #2874a6;
+            padding: 15px;
+            display: none;
+            border-radius: 0 0 10px 10px;
+        }
+        #tab1:checked ~ .content1,
+        #tab2:checked ~ .content2,
+        #tab3:checked ~ .content3 {
+            display: block;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Collapsible Sections */
+        details {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #2874a6;
+            border-radius: 5px;
+            background-color: #eaf1fb;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VEMU Institute of Technology</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About VEMU Institute of Technology</h2>
+        <img src="download (27).jfif" width="100">
+        <p>
+            VEMU Institute of Technology is a premier engineering college offering quality education in various fields of engineering and technology.
+            We focus on academic excellence, innovative research, and holistic student development. Our campus provides modern infrastructure, expert faculty, and vibrant student life.
+        </p>
+    </section>
+
+    <!-- Courses Section with Tabs -->
+    <section id="courses">
+        <h2>Courses Offered</h2>
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked>
+            <label for="tab1">B.Tech</label>
+
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2">M.Tech</label>
+
+            <input type="radio" name="tabs" id="tab3">
+            <label for="tab3">PhD</label>
+
+            <div class="tab-content content1">
+                <ul>
+                    <li>Computer Science and Engineering</li>
+                    <li>Electronics and Communication Engineering</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Civil Engineering</li>
+                </ul>
+            </div>
+            <div class="tab-content content2">
+                <ul>
+                    <li>M.Tech in Computer Science</li>
+                    <li>M.Tech in VLSI Design</li>
+                    <li>M.Tech in Structural Engineering</li>
+                </ul>
+            </div>
+            <div class="tab-content content3">
+                <ul>
+                    <li>PhD in Computer Science</li>
+                    <li>PhD in Electronics</li>
+                    <li>PhD in Mechanical Engineering</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Campus Gallery</h2>
+        <div class="gallery">
+            <img src="download (24).jfif" width="300">
+            <img src="download (25).jfif" width="300">
+            <img src="download (26).jfif" width="300">
+    </section>
+
+    <!-- Events Section using Collapsible -->
+    <section id="events">
+        <h2>Recent Events</h2>
+        <details>
+            <summary>Tech Fest 2025</summary>
+            <p>The annual Tech Fest showcased student innovations, workshops, and competitions. Many teams from across India participated.</p>
+        </details>
+        <details>
+            <summary>Cultural Fest 2025</summary>
+            <p>The Cultural Fest included dance, music, and drama competitions. Students displayed creativity and talent.</p>
+        </details>
+        <details>
+            <summary>Guest Lecture Series</summary>
+            <p>Renowned industry experts conducted sessions on AI, Robotics, and Modern Engineering Practices for students.</p>
+        </details>
+    </section>
+
+</body>
+</html>

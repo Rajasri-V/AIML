@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Forms Hub</h1>
+        
+        <!-- Login Form Toggle -->
+        <label for="login-toggle" class="form-preview">Login Form</label>
+        <input type="checkbox" id="login-toggle">
+        <form class="form-container" id="login-form">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Registration Form Toggle -->
+        <label for="reg-toggle" class="form-preview">Registration Form</label>
+        <input type="checkbox" id="reg-toggle">
+        <form class="form-container" id="reg-form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Contact Form Toggle -->
+        <label for="contact-toggle" class="form-preview">Contact Form</label>
+        <input type="checkbox" id="contact-toggle">
+        <form class="form-container" id="contact-form">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+            <h1>VEMU Institute of Technology</h1>
+ 
+    <form action="" method="get">
+        <fieldset>
+            <legend>User Information</legend>
+        <label>Full Name:</label>
+        <input type="text" name="fullname">
+        <br><br>
+        <label>Email:</label>
+        <input type="email" name="email" required placeholder="enter your name">
+        <br><br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <br><br>
+        </fieldset>
+        <label>Age</label>
+        <input type="number" name="age" min="1" max="100">
+        <br><br>
+        <label>DOB</label>
+        <input type="date" name="dob">
+        <br><br>
+        <label>Color</label>
+        <input type="color" name="color">
+        <br><br>
+        <label>Range</label>
+        <input type="range" name="range">
+        <br><br>
+        <label>Upload file</label>
+        <input type="file" name="resume">
+        <br><br>
+        <label>Information</label>
+        <input type="hide" name="info">
+        <br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">female
+        <br><br>
+        <label>Skills</label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <br><br>
+        <label >Courses:</label>
+        <select name="course" >
+            <option value="">--select option--</option>
+            <option value="B.tech">B.tech</option>
+            <option value="B.com">B.com</option>
+            <option value="BSC">BSC</option>
+        </select>
+        <br><br>
+        <label>Address</label>
+        <textarea name="address" rows="10" cols="20"></textarea>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="Done">
+        <button>Clear</button>
+        </form>
+    </div>
+</body>
+</html>

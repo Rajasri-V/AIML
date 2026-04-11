@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>RESUME</title>
+        </head>
+        <h1><u>RESUME</u></h1>
+        <p><b>NAME</b>:R.KALYAN</p>
+        <p><b>Email</b>:kalyanramisetti@gmail.com</p>
+        <p><b>Mobile No:</b>:7986 530679</p>
+<p><b>Address:Pileru,A.P</p>
+        <hr>
+   <h2><u>CARRER OBJECTIVE</u>:</h2>
+    <p>To start my carrer in a organization where I can apply my academic knowledge,develop pratical skils,and gain valuable experience to develop solutions and grow as a technology professional.</p>
+    <hr>
+<h2>Educational Qualifications</h2>
+<p><b>B.Tech:</b>VEMU Institute of Technology, pursuing 2nd year &complete my graduation at 2028.<br>
+<b>Intermediate:</b>Narayana junior college,Tirupati 2024 with 85%.
+<b>SSC:</b>Vidyaniketan ,Kandur 2021 (90%)</p> 
+    <h2>SKILLS</h2>
+    <pre>Languages          :C,Java,Basics of python</pre>
+    <pre>Web Technologies:   HTML,CSS</pre>
+    <hr>
+    <h3>STRENGTHS:</h3>
+    <p>communicate well</p>
+    <p>handling the situations </p>
+    <p>Good listening skills</p>
+    <p>positive mind</p>
+<p>hard working</p>
+    <hr>
+    <h3>HOBBIES:</h3>
+    <p>Listening to music.</p>
+    <p>Writing stories </p>
+    <p>Helping  parents.</p>
+    <p>Gardening </p>
+    <hr>
+<h4>Languages known: Telugu,English,Hindi(basics)</h4>
+<hr>
+    <h2>DECLARATION:</h2>
+    <P>I hereby declare that all the information provided above is completely true to the best of my knowledge.</P>
+    <h3><pre>SIGNATURE:</pre><p>R.Kalyan</p></h3>
+<p><i>Date:</i>21-01-2026</p>
+    </body>
+ </html>

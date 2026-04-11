@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user= { 
+name: "Tej", 
+greet: function () { 
+console.log("Hello Tej")
+} 
+}
+ console.log(user.name)
+user.greet();
+
+
+//constructors
+function Stud(name, age, address) { 
+this.name = name
+this.age = age
+this.address = address 
+} 
+ 
+let s1 = new Stud("Ram", 20, "tpt")
+let s2 = new Stud("krishna", 21, "hyd") 
+console.log(s1.name)
+console.log(s2.address)
+
+
+
+//set&get
+let user1 = { 
+firstName: "Raja", 
+lastName: "sri", 
+midname:"VUGRANAPALLI",
+get fullName() { 
+return this.firstName + " " + this.lastName +" "+ this.midname; 
+} 
+}
+console.log(user1.fullName)
+
+
+let user2 = { 
+name: "", 
+set userName(value) { 
+this.name = value; 
+} 
+}; 
+user.userName = "Radhe shyam"; 
+console.log(user2.name)
+
+    </script>
+</body>
+</html>

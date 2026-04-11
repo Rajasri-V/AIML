@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const username=prompt("enter username: ")
+        const password=prompt("enter your password")
+
+        if(username==" "||password== " "){
+            console.log("username and password must be filled")
+            return false
+        }
+        console.log("login successfully!!!!")
+        return true;
+    }
+        if(!user()) {
+            return
+        }
+
+        let score=parseFloat(prompt("enter your exam score:"))
+        if(isNaN(score)){
+            console.log("inavlid please enter valid score.")
+            return
+        }
+        if(score>=90){
+            console.log("grade A")
+        }else if(score>=75){
+            console.log("grade B")
+        }else if(score>=60){
+        console.log("grade C")
+        }else if(score>=50){
+            console.log("passed with grade D")
+        }else{
+            console.log("sorry,you failed better luck next time")
+        }
+    
+    </script>
+</body>
+</html>

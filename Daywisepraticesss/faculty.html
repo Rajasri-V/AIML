@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VEMU Leadership</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    margin: 30px;
+  }
+
+
+  .vemu-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+    background: linear-gradient(90deg, #0f074b, #0b0552, #081067);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  th {
+    background: #2c3e50;
+    color: #fff;
+  }
+
+  tr.main-row {
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  tr.main-row:hover {
+    background: #f0f8ff;
+  }
+
+  tr.details-row {
+    display: none;
+  }
+
+  /* Name Column Layout */
+  .name-box {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .name-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    object-fit: cover;
+  }
+
+  .profile {
+    text-align: left;
+    padding: 10px;
+    border-radius: 8px;
+    color: #333;
+    width: 100%;
+  }
+
+  /* Role Colors */
+  .principal {
+    background: #e8f8f5;
+    border-left: 6px solid #1abc9c;
+  }
+
+  .hod {
+    background: #fef9e7;
+    border-left: 6px solid #f39c12;
+  }
+
+  .chairman {
+    background: #f4ecf7;
+    border-left: 6px solid #8e44ad;
+  }
+
+  .profile h3 {
+    margin: 0 0 6px;
+  }
+
+  .profile p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<body>
+<div class="vemu-title"><img src="WhatsApp Image 2026-01-22 at 6.59.41 PM.jpeg" width="30" height="30"> VEMU LEADERSHIP</div>
+
+<table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>ROLE</th>
+  <th>DEPT/COURSE</th>
+</tr>
+</thead>
+
+<tbody>
+  <tr class="main-row">
+  <td>
+    <div class="name-box">
+      <img src="WhatsApp Image 2026-01-23 at 4.28.33 AM.jpeg">
+      <strong>Sri Chandrasekhar</strong>
+    </div>
+  </td>
+  <td>Chairman</td>
+  <td>Management</td>
+</tr>
+<tr class="details-row">
+  <td colspan="3">
+    <div class="profile chairman">
+      <h3>Sri Chandrasekhar Naidu– Chairman</h3>
+      <p><strong>Role:</strong> Founder & Visionary Leader</p>
+      <p><strong>Experience:</strong> 30+ Years in Education</p>
+      <p><strong>Message:</strong> Quality education for future leaders</p>
+    </div>
+  </td>
+</tr>
+
+
+<tr class="main-row">
+  <td>
+    <div class="name-box">
+      <img src="WhatsApp Image 2026-01-30 at 8.03.55 PM.jpeg">
+      <strong>Dr. Naveen killari</strong>
+    </div>
+  </td>
+  <td>Principal</td>
+  <td>Administration</td>
+</tr>
+<tr class="details-row">
+  <td colspan="3">
+    <div class="profile principal">
+      <h3>Dr. Naveen killari – Principal</h3>
+      <p><strong>Qualification:</strong> Ph.D</p>
+      <p><strong>Experience:</strong> 20+ Years</p>
+      <p><strong>Email:</strong> principal@vemu.edu</p>
+    </div>
+  </td>
+</tr>
+<tr class="main-row">
+  <td>
+    <div class="name-box">
+      <img src="WhatsApp Image 2026-01-30 at 8.20.39 PM.jpeg">
+      <strong>Mrs.Bindu puilvarthi</strong>
+    </div>
+  </td>
+  <td>professor</td>
+  <td>DBMS JAVA ADSA</td>
+</tr>
+<tr class="details-row">
+  <td colspan="3">
+    <div class="profile chairman">
+      <h3>Mrs.bindu – professor (CSE)</h3>
+      <p><strong>Qualification:</strong>ds,dbms</p>
+      <p><strong>Specialization:</strong> DBMS</p>
+      <p><strong>Email:</strong> binducse@vemu.edu</p>
+    </div>
+  </td>
+</tr>
+<tr class="main-row">
+  <td>
+    <div class="name-box">
+      <img src="WhatsApp Image 2026-01-30 at 8.27.54 PM.jpeg">
+      <strong>Dr.lokesh</strong>
+    </div>
+  </td>
+  <td>professor</td>
+  <td>artifical intelligence</td>
+</tr>
+<tr class="details-row">
+  <td colspan="4">
+    <div class="profile principal">
+      <h3>Dr. lokesh – Professor</h3>
+      <p><strong>Qualification:</strong> Ph.d</p>
+      <p><strong>Experience:</strong> 20+ Years</p>
+      <p><strong>Email:</strong> lokesh@vemu.edu</p>
+    </div>
+  </td>
+</tr>
+</tbody>
+</table>
+<script>
+  document.querySelectorAll(".main-row").forEach(row => {
+    row.addEventListener("click", () => {
+      const details = row.nextElementSibling;
+      details.style.display =
+        details.style.display === "table-row" ? "none" : "table-row";
+    });
+  });
+</script>
+
+</body>
+</html>

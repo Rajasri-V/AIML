@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            name:"Raji",roll:"D0",branch:"AIML-B",marks:[26,30,28],isStudent :true,
+            skills:{
+                HTML:"best",
+                C:"good",
+                JAva:"avg",
+            }
+        }
+        console.log(student.name)
+        console.log(student)
+        console.log(Object.keys(student))
+        console.log(student.skills.html)
+        student.age=18
+        //adding
+        student.name="Rajasri"
+        console.log(student)
+        console.log(Object.entries(student))
+
+        //for in
+        for(let r in student){
+            console.log(r,":",student[r])
+            
+        }
+        //print marks
+        console.log(student.marks[0])
+        console.log(student.branch)
+        //del
+        delete(student.marks)
+        console.log(student)
+    </script>
+</body>
+</html>
